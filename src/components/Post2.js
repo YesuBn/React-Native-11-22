@@ -27,7 +27,6 @@ const styles = StyleSheet.create({
   box1: {
     width: "90%",
     height: "65%",
-    position: "absolute",
     backgroundColor: "#773537",
     borderRadius: 25,
     top: 100,

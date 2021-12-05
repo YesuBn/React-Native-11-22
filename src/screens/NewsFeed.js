@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Post1 from "../components/Post1";
 import Post2 from "../components/Post2";
-import { View, SafeAreaView, ScrollView, StyleSheet } from "react-native";
+import { View, ScrollView, StyleSheet } from "react-native";
 
 export default function () {
   return (

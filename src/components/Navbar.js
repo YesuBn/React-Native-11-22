@@ -1,13 +1,15 @@
 import React from "react";
-import { Text, View, StyleSheet, Image } from "react-native";
+import { Text, View, StyleSheet, Image, TouchableOpacity } from "react-native";
+import { Feather } from "@expo/vector-icons";
+
+import Scheduling from "./Scheduling";
 
 export default function () {
   return (
     <View style={styles.notch}>
-      <Image
-        style={styles.sideBar}
-        source={require("../../assets/icons8-menu-24.png")}
-      />
+      <View style={{ marginLeft: 20 }}>
+        <Feather name="menu" size={24} color="white" />
+      </View>
       <Text style={styles.notchText}>Hello!{"\n"} Good afternoon</Text>
     </View>
   );
@@ -22,16 +24,17 @@ const styles = StyleSheet.create({
     borderBottomEndRadius: 35,
     backgroundColor: "#773537",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "flex-start",
+    flexDirection: "column",
   },
   notchText: {
+    position: "absolute",
     textAlign: "center",
     fontSize: 24,
     color: "#fff",
     fontWeight: "bold",
+    flex: 1,
+    alignSelf: "center",
   },
-  sideBar: {
-    position: "absolute",
-    left: 20,
-  },
+  sideBar: {},
 });
