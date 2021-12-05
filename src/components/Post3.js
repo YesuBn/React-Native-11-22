@@ -1,21 +1,23 @@
 import React from "react";
 import { View, Text, StyleSheet, Image, Button } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 export default function () {
+  const navigation = useNavigation();
   return (
-    <View style={{ alignItems: "center", bottom: 300 }}>
-      <View style={styles.box1}>
+    <View style={{ alignItems: "center", bottom: 450, marginBottom: 200 }}>
+      <View style={styles.container}>
         <Image
           style={styles.postImage1}
-          source={require("../../assets/Enkhsaikhan_2.png")}
+          source={require("../../assets/Egshiglen_1.png")}
         />
         <View style={styles.postTitleWrapper}>
           <Text style={styles.postTitle1}>
-            Б.ЭНХСАЙХАН: Дэлхийд архитектураараа хоёрт жагсдаг “NIKKEN SEKKEI
-            consulting” компанид ажиллаж чадсан
+            Г.ЭГШИГЛЭН: Сургуульдаа эзэмшсэн инженер сэтгэлгээ өдөр тутам ажилд
+            маань хэрэг болдог
           </Text>
           <Button
-            title="Дэлгэрэнгүй..."
+            title="Дэлгэрэнгүй"
             onPress={() => navigation.navigate("PostInfo")}
           ></Button>
         </View>
@@ -24,20 +26,19 @@ export default function () {
   );
 }
 const styles = StyleSheet.create({
-  box1: {
+  container: {
     width: "90%",
     height: "45%",
     backgroundColor: "#773537",
     borderRadius: 25,
-    top: 100,
   },
+
   postImage1: {
     width: "100%",
-    height: 250,
+    height: 300,
     borderRadius: 25,
   },
   postTitleWrapper: {
-    position: "relative",
     bottom: 45,
     width: "100%",
     height: "40%",
@@ -48,7 +49,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   postTitle1: {
-    position: "relative",
     color: "white",
     opacity: 1,
   },

@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, ScrollView, SafeAreaView, StyleSheet } from "react-native";
+import { Text, ScrollView, SafeAreaView, StyleSheet } from "react-native";
 
 const PostOneText = () => {
   return (

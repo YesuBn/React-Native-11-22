@@ -28,7 +28,7 @@ export default function () {
 const styles = StyleSheet.create({
   container: {
     width: "90%",
-    height: "65%",
+    height: "45%",
     backgroundColor: "#773537",
     borderRadius: 25,
   },
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   postTitleWrapper: {
     bottom: 45,
     width: "100%",
-    height: "30%",
+    height: "40%",
     backgroundColor: "#773537",
     borderRadius: 25,
     opacity: 1,

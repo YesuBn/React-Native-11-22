@@ -1,15 +1,15 @@
 import React from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
-import Navbar from "../components/Navbar";
-import PostOneText from "../components/postOneText";
+import { View, Image, StyleSheet } from "react-native";
+
+import PostThreeText from "../components/PostThreeText";
 export default function () {
   return (
     <View style={styles.container}>
       <Image
         style={styles.img}
-        source={require("../../assets/Anudari_1.png")}
+        source={require("../../assets/Egshiglen_1.png")}
       />
-      <PostOneText />
+      <PostThreeText />
     </View>
   );
 }
